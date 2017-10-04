@@ -59,7 +59,7 @@ before_script:
   - |
     if [ $ORACLE_VER ]; then 
       docker run --link ${ORACLE_VER}:db -e CHECK_PORT=1521 -e CHECK_HOST=db --net sequelize_default giorgos/takis
-      sleep 5
+      sleep 20
     fi
 
 script:
